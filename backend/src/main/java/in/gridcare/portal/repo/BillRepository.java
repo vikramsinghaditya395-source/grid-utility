@@ -1,0 +1,3 @@
+package in.gridcare.portal.repo;
+import in.gridcare.portal.model.ElectricityBill; import org.springframework.data.jpa.repository.JpaRepository; import java.util.List;
+public interface BillRepository extends JpaRepository<ElectricityBill,Long>{List<ElectricityBill> findByCustomerCustomerIdOrderByCreatedAtDesc(String id); List<ElectricityBill> findAllByOrderByCreatedAtDesc(); boolean existsByCustomerCustomerIdAndBillingMonth(String id,String month);}

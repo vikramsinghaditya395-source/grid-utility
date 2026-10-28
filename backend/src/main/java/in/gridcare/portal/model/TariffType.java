@@ -1,0 +1,1 @@
+package in.gridcare.portal.model; public enum TariffType { RESIDENTIAL, COMMERCIAL }
